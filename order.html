@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Заказать услугу - Internat.com</title>
+    <title data-translate="order_service">Order Service - Internat.com</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -15,16 +15,16 @@
                 <a href="/">Internat.com</a>
             </div>
             <div class="nav-links">
-                <a href="index.html#services" data-translate="services">Услуги</a>
-                <a href="index.html#portfolio" data-translate="portfolio">Портфолио</a>
-                <a href="index.html#about" data-translate="about">О нас</a>
-                <a href="index.html#contact" data-translate="contact">Контакты</a>
-                <a href="apply.html" class="vacancy-btn" data-translate="vacancies">Вакансии</a>
+                <a href="index.html#services" data-translate="services">Services</a>
+                <a href="index.html#portfolio" data-translate="portfolio">Portfolio</a>
+                <a href="index.html#about" data-translate="about">About Us</a>
+                <a href="index.html#contact" data-translate="contact">Contact</a>
+                <a href="apply.html" class="vacancy-btn" data-translate="vacancies">Vacancies</a>
             </div>
             <div class="language-selector">
                 <select>
-                    <option value="ru">RU</option>
                     <option value="en">EN</option>
+                    <option value="ru">RU</option>
                     <option value="kz">KZ</option>
                 </select>
             </div>
@@ -34,26 +34,26 @@
     <main>
         <section class="page-header">
             <div class="page-header-content">
-                <h1 data-translate="order_service">Заказать услугу</h1>
-                <p data-translate="tell_about_project">Расскажите о вашем проекте, и мы свяжемся с вами</p>
+                <h1 data-translate="order_service">Order Service</h1>
+                <p data-translate="tell_about_project">Tell us about your project, and we'll contact you</p>
             </div>
         </section>
 
         <section class="order-section">
             <div class="order-container">
                 <div class="order-form-container">
-                    <h2 data-translate="order_service">Форма заказа</h2>
+                    <h2 data-translate="order_form">Order Form</h2>
                     <form class="order-form" action="https://api.web3forms.com/submit" method="POST">
                         <input type="hidden" name="access_key" value="9152aa99-2d79-4e7e-bad8-628c4e4b33f1">
                         <input type="hidden" name="service" id="service-type">
                         
                         <div class="form-group">
-                            <label for="name" data-translate="name">Ваше имя</label>
+                            <label for="name" data-translate="name">Your Name</label>
                             <input type="text" id="name" name="name" required>
                         </div>
                         
                         <div class="form-group">
-                            <label for="phone" data-translate="phone">Номер телефона</label>
+                            <label for="phone" data-translate="phone">Phone Number</label>
                             <input type="tel" id="phone" name="phone" required>
                         </div>
                         
@@ -63,90 +63,90 @@
                         </div>
                         
                         <div class="form-group">
-                            <label for="service-select" data-translate="service_type">Тип услуги</label>
+                            <label for="service-select" data-translate="service_type">Service Type</label>
                             <select id="service-select" name="service_type" required>
-                                <option value="" data-translate="select_service">Выберите услугу</option>
-                                <option value="chatbot" data-translate="chatbot">Чат-боты</option>
-                                <option value="game" data-translate="game">Разработка игр</option>
-                                <option value="web" data-translate="web">Веб-разработка</option>
-                                <option value="video" data-translate="video">Видеомонтаж</option>
+                                <option value="" data-translate="select_service">Select Service</option>
+                                <option value="chatbot" data-translate="chatbot">Chatbots</option>
+                                <option value="game" data-translate="game">Game Development</option>
+                                <option value="web" data-translate="web">Web Development</option>
+                                <option value="video" data-translate="video">Video Editing</option>
                             </select>
                         </div>
                         
                         <div class="form-group">
-                            <label for="budget" data-translate="budget">Бюджет проекта</label>
+                            <label for="budget" data-translate="project_budget">Project Budget</label>
                             <select id="budget" name="budget" required>
-                                <option value="" data-translate="select_budget">Выберите бюджет</option>
-                                <option value="small" data-translate="small">До 100,000 ₸</option>
+                                <option value="" data-translate="select_budget">Select Budget</option>
+                                <option value="small" data-translate="small">Up to 100,000 ₸</option>
                                 <option value="medium" data-translate="medium">100,000 - 500,000 ₸</option>
                                 <option value="large" data-translate="large">500,000 - 1,000,000 ₸</option>
-                                <option value="enterprise" data-translate="enterprise">Более 1,000,000 ₸</option>
+                                <option value="enterprise" data-translate="enterprise">More than 1,000,000 ₸</option>
                             </select>
                         </div>
                         
                         <div class="form-group">
-                            <label for="deadline" data-translate="deadline">Желаемый срок выполнения</label>
+                            <label for="deadline" data-translate="deadline">Desired Completion Time</label>
                             <select id="deadline" name="deadline" required>
-                                <option value="" data-translate="select_deadline">Выберите срок</option>
-                                <option value="urgent" data-translate="urgent">Срочно (до 1 месяца)</option>
-                                <option value="normal" data-translate="normal">Стандартно (1-3 месяца)</option>
-                                <option value="flexible" data-translate="flexible">Гибкий (3+ месяца)</option>
+                                <option value="" data-translate="select_deadline">Select Deadline</option>
+                                <option value="urgent" data-translate="urgent">Urgent (up to 1 month)</option>
+                                <option value="normal" data-translate="normal">Standard (1-3 months)</option>
+                                <option value="flexible" data-translate="flexible">Flexible (3+ months)</option>
                             </select>
                         </div>
                         
                         <div class="form-group">
-                            <label for="message" data-translate="project_description">Описание проекта</label>
+                            <label for="message" data-translate="project_description">Project Description</label>
                             <textarea id="message" name="message" rows="5" required></textarea>
                         </div>
                         
-                        <button type="submit" class="submit-button" data-translate="submit_request">Отправить заявку</button>
+                        <button type="submit" class="submit-button" data-translate="submit_request">Submit Request</button>
                     </form>
                 </div>
                 
                 <div class="order-info">
-                    <h2 data-translate="why_choose_us">Почему выбирают нас?</h2>
+                    <h2 data-translate="why_choose_us">Why Choose Us?</h2>
                     <div class="benefits-list">
                         <div class="benefit-item">
                             <i class="fas fa-check-circle"></i>
                             <div>
-                                <h3 data-translate="professional_approach">Профессиональный подход</h3>
-                                <p data-translate="professional_approach_desc">Мы используем современные технологии и лучшие практики в разработке</p>
+                                <h3 data-translate="professional_approach">Professional Approach</h3>
+                                <p data-translate="professional_approach_desc">We use modern technologies and best practices in development</p>
                             </div>
                         </div>
                         <div class="benefit-item">
                             <i class="fas fa-clock"></i>
                             <div>
-                                <h3 data-translate="deadlines">Соблюдение сроков</h3>
-                                <p data-translate="deadlines_desc">Мы всегда выполняем проекты в оговоренные сроки</p>
+                                <h3 data-translate="deadlines">Meeting Deadlines</h3>
+                                <p data-translate="deadlines_desc">We always complete projects on time</p>
                             </div>
                         </div>
                         <div class="benefit-item">
                             <i class="fas fa-comments"></i>
                             <div>
-                                <h3 data-translate="transparent_communication">Прозрачное общение</h3>
-                                <p data-translate="transparent_communication_desc">Мы держим вас в курсе всех этапов разработки</p>
+                                <h3 data-translate="transparent_communication">Transparent Communication</h3>
+                                <p data-translate="transparent_communication_desc">We keep you informed of all development stages</p>
                             </div>
                         </div>
                         <div class="benefit-item">
                             <i class="fas fa-shield-alt"></i>
                             <div>
-                                <h3 data-translate="quality_guarantee">Гарантия качества</h3>
-                                <p data-translate="quality_guarantee_desc">Мы предоставляем гарантию на все наши работы</p>
+                                <h3 data-translate="quality_guarantee">Quality Guarantee</h3>
+                                <p data-translate="quality_guarantee_desc">We provide a warranty for all our work</p>
                             </div>
                         </div>
                     </div>
                     
                     <div class="contact-info">
-                        <h3 data-translate="questions">Остались вопросы?</h3>
-                        <p data-translate="contact_directly">Свяжитесь с нами напрямую:</p>
+                        <h3 data-translate="questions">Have Questions?</h3>
+                        <p data-translate="contact_directly">Contact us directly:</p>
                         <div class="contact-methods">
-                            <a href="tel:+7476707427" class="contact-method">
+                            <a href="tel:+77771234567" class="contact-method">
                                 <i class="fas fa-phone"></i>
-                                <span>+7 7476707427</span>
+                                <span>+7 (777) 123-45-67</span>
                             </a>
-                            <a href="mailto:iwanttibeamillioner@gmail.com" class="contact-method">
+                            <a href="mailto:info@internat.com" class="contact-method">
                                 <i class="fas fa-envelope"></i>
-                                <span>iwanttibeamillioner@gmail.com</span>
+                                <span>info@internat.com</span>
                             </a>
                         </div>
                     </div>
@@ -158,7 +158,7 @@
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-info">
-                <p>&copy; 2024 Internat.com. <span data-translate="all_rights_reserved">Все права защищены.</span></p>
+                <p>&copy; 2024 Internat.com. <span data-translate="all_rights_reserved">All rights reserved.</span></p>
             </div>
             <div class="social-links">
                 <a href="#"><i class="fab fa-telegram"></i></a>
@@ -169,8 +169,9 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="simple-translator.js"></script>
     <script>
-        // Получаем параметр service из URL и устанавливаем его в скрытое поле
+        // Get service parameter from URL and set it in hidden field
         document.addEventListener('DOMContentLoaded', function() {
             const urlParams = new URLSearchParams(window.location.search);
             const service = urlParams.get('service');
