@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Подать заявку - Internat.com</title>
+    <title data-translate="apply_job">Apply for a Job - Internat.com</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -15,16 +15,16 @@
                 <a href="/">Internat.com</a>
             </div>
             <div class="nav-links">
-                <a href="index.html#services" data-translate="services">Услуги</a>
-                <a href="index.html#portfolio" data-translate="portfolio">Портфолио</a>
-                <a href="index.html#about" data-translate="about">О нас</a>
-                <a href="index.html#contact" data-translate="contact">Контакты</a>
-                <a href="apply.html" class="vacancy-btn active" data-translate="vacancies">Вакансии</a>
+                <a href="index.html#services" data-translate="services">Services</a>
+                <a href="index.html#portfolio" data-translate="portfolio">Portfolio</a>
+                <a href="index.html#about" data-translate="about">About Us</a>
+                <a href="index.html#contact" data-translate="contact">Contact</a>
+                <a href="apply.html" class="vacancy-btn" data-translate="vacancies">Vacancies</a>
             </div>
             <div class="language-selector">
                 <select>
-                    <option value="ru">RU</option>
                     <option value="en">EN</option>
+                    <option value="ru">RU</option>
                     <option value="kz">KZ</option>
                 </select>
             </div>
@@ -34,26 +34,26 @@
     <main>
         <section class="page-header">
             <div class="page-header-content">
-                <h1 data-translate="apply_for_job">Подать заявку на вакансию</h1>
-                <p data-translate="tell_about_yourself">Расскажите о себе и своих навыках</p>
+                <h1 data-translate="apply_job">Apply for a Job</h1>
+                <p data-translate="tell_about_yourself">Tell us about yourself and your skills</p>
             </div>
         </section>
 
         <section class="apply-section">
             <div class="apply-container">
                 <div class="apply-form-container">
-                    <h2 data-translate="application_form">Форма заявки</h2>
+                    <h2 data-translate="application_form">Application Form</h2>
                     <form class="apply-form" action="https://api.web3forms.com/submit" method="POST">
                         <input type="hidden" name="access_key" value="9152aa99-2d79-4e7e-bad8-628c4e4b33f1">
                         <input type="hidden" name="position" id="position-type">
                         
                         <div class="form-group">
-                            <label for="name" data-translate="name">Ваше имя</label>
+                            <label for="name" data-translate="name">Your Name</label>
                             <input type="text" id="name" name="name" required>
                         </div>
                         
                         <div class="form-group">
-                            <label for="phone" data-translate="phone">Номер телефона</label>
+                            <label for="phone" data-translate="phone">Phone Number</label>
                             <input type="tel" id="phone" name="phone" required>
                         </div>
                         
@@ -63,89 +63,89 @@
                         </div>
                         
                         <div class="form-group">
-                            <label for="position-select" data-translate="desired_position">Желаемая должность</label>
+                            <label for="position-select" data-translate="desired_position">Desired Position</label>
                             <select id="position-select" name="position_type" required>
-                                <option value="" data-translate="select_position">Выберите должность</option>
-                                <option value="frontend" data-translate="frontend_developer">Frontend Developer</option>
-                                <option value="backend" data-translate="backend_developer">Backend Developer</option>
-                                <option value="designer" data-translate="ui_ux_designer">UI/UX Designer</option>
-                                <option value="manager" data-translate="project_manager">Project Manager</option>
-                                <option value="other" data-translate="other">Другое</option>
+                                <option value="" data-translate="select_position">Select Position</option>
+                                <option value="frontend" data-translate="frontend">Frontend Developer</option>
+                                <option value="backend" data-translate="backend">Backend Developer</option>
+                                <option value="designer" data-translate="designer">UI/UX Designer</option>
+                                <option value="manager" data-translate="manager">Project Manager</option>
+                                <option value="other" data-translate="other">Other</option>
                             </select>
                         </div>
                         
                         <div class="form-group">
-                            <label for="experience" data-translate="work_experience">Опыт работы</label>
+                            <label for="experience" data-translate="work_experience">Work Experience</label>
                             <select id="experience" name="experience" required>
-                                <option value="">Выберите опыт</option>
-                                <option value="no">Без опыта</option>
-                                <option value="junior">До 1 года</option>
-                                <option value="middle">1-3 года</option>
-                                <option value="senior">3+ года</option>
+                                <option value="" data-translate="select_experience">Select Experience</option>
+                                <option value="no" data-translate="no">No Experience</option>
+                                <option value="junior" data-translate="junior">Up to 1 year</option>
+                                <option value="middle" data-translate="middle">1-3 years</option>
+                                <option value="senior" data-translate="senior">3+ years</option>
                             </select>
                         </div>
                         
                         <div class="form-group">
-                            <label for="skills" data-translate="skills">Навыки</label>
-                            <textarea id="skills" name="skills" rows="4" placeholder="Расскажите о ваших технических навыках, языках программирования, инструментах и т.д." required></textarea>
+                            <label for="skills" data-translate="skills">Skills</label>
+                            <textarea id="skills" name="skills" rows="4" placeholder="Tell us about your technical skills, programming languages, tools, etc." required></textarea>
                         </div>
                         
                         <div class="form-group">
-                            <label for="about" data-translate="about_yourself">Расскажите о себе</label>
-                            <textarea id="about" name="about" rows="4" placeholder="Расскажите о себе, своем опыте, достижениях и почему вы хотите работать с нами" required></textarea>
+                            <label for="about" data-translate="about_yourself">About Yourself</label>
+                            <textarea id="about" name="about" rows="4" placeholder="Tell us about yourself, your experience, achievements and why you want to work with us" required></textarea>
                         </div>
                         
                         <div class="form-group">
-                            <label for="portfolio" data-translate="portfolio_link">Ссылка на портфолио (если есть)</label>
+                            <label for="portfolio" data-translate="portfolio_link">Portfolio Link (if any)</label>
                             <input type="url" id="portfolio" name="portfolio" placeholder="https://...">
                         </div>
                         
                         <div class="form-group">
-                            <label for="resume" data-translate="resume">Резюме</label>
+                            <label for="resume">Resume</label>
                             <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
-                            <small data-translate="resume_formats">Поддерживаемые форматы: PDF, DOC, DOCX</small>
+                            <small>Supported formats: PDF, DOC, DOCX</small>
                         </div>
                         
-                        <button type="submit" class="submit-button" data-translate="submit_application">Отправить заявку</button>
+                        <button type="submit" class="submit-button" data-translate="submit_application">Submit Application</button>
                     </form>
                 </div>
                 
                 <div class="apply-info">
-                    <h2 data-translate="why_join_us">Почему стоит присоединиться к нам?</h2>
+                    <h2 data-translate="why_join_us">Why Join Us?</h2>
                     <div class="benefits-list">
                         <div class="benefit-item">
                             <i class="fas fa-laptop-code"></i>
                             <div>
-                                <h3 data-translate="interesting_projects">Интересные проекты</h3>
-                                <p data-translate="interesting_projects_desc">Работа над современными технологиями и инновационными решениями</p>
+                                <h3 data-translate="interesting_projects">Interesting Projects</h3>
+                                <p data-translate="interesting_projects_desc">Work with modern technologies and innovative solutions</p>
                             </div>
                         </div>
                         <div class="benefit-item">
                             <i class="fas fa-users"></i>
                             <div>
-                                <h3 data-translate="professional_team">Профессиональная команда</h3>
-                                <p data-translate="professional_team_desc">Возможность учиться у опытных разработчиков</p>
+                                <h3 data-translate="professional_team">Professional Team</h3>
+                                <p data-translate="professional_team_desc">Learn from experienced developers</p>
                             </div>
                         </div>
                         <div class="benefit-item">
                             <i class="fas fa-graduation-cap"></i>
                             <div>
-                                <h3 data-translate="career_growth">Карьерный рост</h3>
-                                <p data-translate="career_growth_desc">Реальные возможности для развития и повышения квалификации</p>
+                                <h3 data-translate="career_growth">Career Growth</h3>
+                                <p data-translate="career_growth_desc">Real opportunities for development and professional growth</p>
                             </div>
                         </div>
                         <div class="benefit-item">
                             <i class="fas fa-balance-scale"></i>
                             <div>
-                                <h3 data-translate="work_life_balance">Work-life balance</h3>
-                                <p data-translate="work_life_balance_desc">Гибкий график и возможность удаленной работы</p>
+                                <h3 data-translate="work_life_balance">Work-life Balance</h3>
+                                <p data-translate="work_life_balance_desc">Flexible schedule and remote work opportunity</p>
                             </div>
                         </div>
                     </div>
                     
                     <div class="contact-info">
-                        <h3 data-translate="questions">Остались вопросы?</h3>
-                        <p data-translate="contact_directly">Свяжитесь с нашим HR-менеджером:</p>
+                        <h3 data-translate="questions">Have Questions?</h3>
+                        <p data-translate="contact_hr">Contact our HR Manager:</p>
                         <div class="contact-methods">
                             <a href="tel:+77771234567" class="contact-method">
                                 <i class="fas fa-phone"></i>
@@ -165,7 +165,7 @@
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-info">
-                <p>&copy; 2024 Internat.com. <span data-translate="all_rights_reserved">Все права защищены.</span></p>
+                <p>&copy; 2024 Internat.com. <span data-translate="all_rights_reserved">All rights reserved.</span></p>
             </div>
             <div class="social-links">
                 <a href="#"><i class="fab fa-telegram"></i></a>
@@ -177,7 +177,7 @@
 
     <script src="script.js"></script>
     <script>
-        // Получаем параметр position из URL и устанавливаем его в скрытое поле
+        // Get position parameter from URL and set it in hidden field
         document.addEventListener('DOMContentLoaded', function() {
             const urlParams = new URLSearchParams(window.location.search);
             const position = urlParams.get('position');
