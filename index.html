@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate="title">Internat.com - Professional IT Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <a href="/">Internat.com</a>
+            </div>
+            <div class="nav-links">
+                <a href="#services" data-translate="services">Services</a>
+                <a href="#portfolio" data-translate="portfolio">Portfolio</a>
+                <a href="#about" data-translate="about">About Us</a>
+                <a href="feedback.html" class="feedback-btn" data-translate="feedback">Feedback</a>
+                <a href="apply.html" class="vacancy-btn" data-translate="vacancies">Vacancies</a>
+            </div>
+            <div class="language-selector">
+                <select>
+                    <option value="en">EN</option>
+                    <option value="ru">RU</option>
+                    <option value="kz">KZ</option>
+                </select>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1 data-translate="creating_digital_future">Creating Digital Future</h1>
+                <p data-translate="professional_development">Professional development of chatbots, games, websites and video editing</p>
+                <a href="order.html" class="cta-button" data-translate="order_service">Order Service</a>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <h2 data-translate="our_services">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-robot"></i>
+                    <h3 data-translate="chatbot">Chatbots</h3>
+                    <p data-translate="chatbot_desc">Development of smart chatbots for business process automation</p>
+                    <a href="order.html?service=chatbot" class="service-link" data-translate="learn_more">Learn More</a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-gamepad"></i>
+                    <h3 data-translate="game">Game Development</h3>
+                    <p data-translate="game_desc">Creation of exciting game projects of any complexity</p>
+                    <a href="order.html?service=game" class="service-link" data-translate="learn_more">Learn More</a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-code"></i>
+                    <h3 data-translate="web">Web Development</h3>
+                    <p data-translate="web_desc">Modern and responsive websites for your business</p>
+                    <a href="order.html?service=web" class="service-link" data-translate="learn_more">Learn More</a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-video"></i>
+                    <h3 data-translate="video">Video Editing</h3>
+                    <p data-translate="video_desc">Professional video content processing and editing</p>
+                    <a href="order.html?service=video" class="service-link" data-translate="learn_more">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio">
+            <h2 data-translate="portfolio">Portfolio</h2>
+            <div class="portfolio-grid">
+                <!-- Portfolio items will be added dynamically -->
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2 data-translate="about_us">About Us</h2>
+            <div class="about-content">
+                <p data-translate="about_text">We are a team of professionals ready to bring your ideas to life. Our experience and expertise allow us to create quality digital solutions for business.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <p>&copy; 2024 Internat.com. <span data-translate="all_rights_reserved">All rights reserved.</span></p>
+            </div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-telegram"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="simple-translator.js"></script>
+</body>
+</html>
